@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Comment{% endblock %}
+
+{% block body %}
+    <h1>Information sur le commentaire :</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Sujet</th>
+                <td>{{ comment.topic.title }}</td>
+            </tr>
+            <tr>
+                <th>Description</th>
+                <td>{{ comment.topic.description }}</td>
+            </tr>
+            <tr>
+                <th>Message</th>
+                <td>{{ comment.message }}</td>
+            </tr>
+            <tr>
+                <th>Date de creation</th>
+                <td>{{ comment.creationDate ? comment.creationDate|date('Y-m-d') : '' }}</td>
+            </tr>
+            <tr>
+                <th>Date de modification</th>
+                <td>{{ comment.modificationDate ? comment.modificationDate|date('Y-m-d') : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_comment_index') }}">Retour à la liste</a>
+
+    {{ include('comment/_delete_form.html.twig') }}
+{% endblock %}

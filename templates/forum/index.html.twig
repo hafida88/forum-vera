@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    
+    {% if app.user %}
+        <h1>Bonjour {{ app.user.pseudo }},  T'chaton ensemble ! 😺</h1>
+    {% else %}
+        <h1>Forum T'chaton ensemble ! 😺</h1>
+        <p class="text-center">Grrr, Tu peux te connecter ou t'inscrire pour miauler avec nous !<p>
+    {% endif %}    
+
+{% endblock %}

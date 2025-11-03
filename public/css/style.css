@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Slackey&display=swap");
+body {
+    background-image: url("/img/bg.png");
+    background-size: cover;
+    font-size: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: rgb(142, 51, 240);
+    font-family: "Slackey", sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.nav {
+    background-color: rgba(142, 51, 240, 0.949);
+}
+
+footer {
+    background-color: rgb(142, 51, 240);
+    color: black;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.myBody {
+    margin: 4%;
+    padding: 3%;
+    background-color: rgba(250, 247, 255, 0.945);
+    min-height: 500px;
+    border-radius: 30px;
+}
+
+.pInFooter {
+    text-decoration: none;
+    color: black;
+}
+
+.nameNav {
+    font-family: "Slackey", sans-serif;
+    text-decoration: none;
+    font-size: 40px;
+    color: aliceblue;
+    padding-inline: 20px;
+}
